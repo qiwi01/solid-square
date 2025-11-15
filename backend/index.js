@@ -37,5 +37,11 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: 'Server Error' });
 });
 
+
+app.use(cors({
+  origin: ['http://localhost:5173', 'https://solidsquare-estates.vercel.app'],
+  credentials: true,
+}));
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

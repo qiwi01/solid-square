@@ -1,0 +1,122 @@
+/* GLOBAL STYLES ONLY */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #0D1B2A;
+  --secondary: #1B263B;
+  --accent: #415A77;
+  --highlight: #F2CC8F;
+  --text: #FFFFFF;
+  --gray: #94A3B8;
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  --transition: all 0.35s ease;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-accent: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--primary);
+  color: var(--text);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: var(--font-accent);
+  cursor: pointer;
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mt-3 { margin-top: 3rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+
+/* Add to the END of frontend/src/index.css */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.dark {
+  --primary: #0A0A0A;
+  --secondary: #111111;
+  --accent: #1E293B;
+  --highlight: #FACC15;
+  --text: #F1F5F9;
+  --gray: #94A3B8;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.dark .card,
+.dark .navbar,
+.dark .footer,
+.dark .auth-container,
+.dark .calculator-card,
+.dark .agent-hero,
+.dark .blog-card,
+.dark .stat-card,
+.dark .table-container,
+.dark .agent-contact {
+  background: var(--secondary) !important;
+  box-shadow: var(--shadow);
+}
+
+.dark .hero {
+  background: linear-gradient(135deg, rgba(10, 10, 10, 0.95), rgba(17, 17, 17, 0.9)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover;
+}
+
+.dark .search-bar input,
+.dark .search-bar select {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.dark .form-control,
+.dark .input-group input {
+  background: var(--primary);
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+/* Responsive Container */
+@media (max-width: 768px) {
+  .container { padding: 0 1rem; }
+}

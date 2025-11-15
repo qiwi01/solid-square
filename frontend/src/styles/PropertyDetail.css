@@ -1,0 +1,46 @@
+.detail-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.detail-price {
+  font-size: 2.5rem;
+  color: var(--highlight);
+  font-weight: 700;
+}
+
+.badge {
+  background: var(--accent);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.agent-contact {
+  background: var(--secondary);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.map-container {
+  height: 400px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .detail-header { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,4 @@
+.article-header { text-align: center; margin-bottom: 3rem; }
+.article-meta { color: var(--gray); margin: 1rem 0; }
+.article-content { font-size: 1.15rem; line-height: 1.8; max-width: 800px; margin: 0 auto; }
+.article-content img { border-radius: 12px; margin: 2rem 0; }

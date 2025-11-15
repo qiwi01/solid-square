@@ -1,0 +1,101 @@
+.navbar {
+  background: var(--secondary);
+  padding: 1.2rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--highlight);
+  font-family: var(--font-heading);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+ .nav-links.active { left: 0; }
+
+/* Existing styles ... */
+
+/* Auth buttons side-by-side on desktop */
+.nav-links .btn {
+  margin-left: 0.5rem;}
+
+.nav-links a {
+  color: var(--text);
+  font-weight: 500;
+  position: relative;
+  transition: var(--transition);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background: var(--highlight);
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after { width: 100%; }
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: var(--highlight);
+}
+
+@media (max-width: 768px) {
+  .hamburger { display: block; }
+  .nav-links {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    background: var(--secondary);
+    flex-direction: column;
+    padding: 2rem;
+    transition: 0.4s ease;
+  }
+ 
+  .nav-links .btn {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+
+/* Right-side controls */
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--highlight);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.theme-toggle:hover {
+  transform: scale(1.2);
+}
+}

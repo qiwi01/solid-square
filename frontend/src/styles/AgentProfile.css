@@ -1,0 +1,25 @@
+.agent-hero {
+  background: linear-gradient(135deg, var(--secondary), var(--primary));
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 24px;
+  margin-bottom: 3rem;
+}
+
+.agent-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--highlight);
+  margin-bottom: 1rem;
+}
+
+.rating-stars { color: #FFD700; font-size: 1.5rem; }
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}

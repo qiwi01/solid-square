@@ -1,0 +1,20 @@
+.blog-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.blog-card {
+  background: var(--secondary);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.blog-card:hover { transform: translateY(-10px); }
+
+.blog-card img { height: 200px; object-fit: cover; }
+
+.blog-meta { padding: 1rem 1.5rem 0; color: var(--gray); font-size: 0.9rem; }
+.blog-title { padding: 0 1.5rem; font-size: 1.4rem; margin: 0.5rem 0; }
+.blog-excerpt { padding: 0 1.5rem 1.5rem; color: var(--gray); }
