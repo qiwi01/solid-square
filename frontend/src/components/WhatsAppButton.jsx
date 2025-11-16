@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/WhatsappButton.css';
+import '../styles/WhatsAppButton.css';
 
 const WhatsAppButton = () => (
   <a href="https://wa.me/+234123456789?text=Hello, I have a question about SolidSquare Estates" target="_blank" rel="noopener noreferrer" style={{ position: 'fixed', bottom: 20, right: 20, zIndex: 1000 }}>
